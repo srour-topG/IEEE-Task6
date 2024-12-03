@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.divShaping{
+    height: 50vh;
+    overflow: hidden;
+
+}
+
+.textShaping{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 0;
+    margin-top: 10%;
+    color: white;
+}
+
+.desert{
+    /* background-color: red; */
+    background-image: url(/images/desert.jpg);
+    background-size: 100% 100%;
+    transition: 3s;
+
+}
+
+.desert h2{
+    /* background-color: blue; */
+    transition: 4S;
+    animation-name: desertMovement;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+/* animation for desert section */
+@keyframes desertMovement {
+    from{
+        transform: translateY(-50%);
+    }to{
+        transform: translateY(50%);
+    }
+    
+}
+
+.forest{
+    /* background-color: red; */
+    background-image: url(/images/forest.jpg);
+    background-size: 100% 100%;
+
+}
+
+.forest h2{
+    /* background-color: blue; */
+    animation-name: forestMovement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+/* animation for desert section */
+@keyframes forestMovement {
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+
+
+.canyon{
+    /* background-color: red; */
+    background-image: url(/images/canyon.jpg);
+    background-size: 100% 100%;
+    
+}
+
+.canyon h2{
+    /* background-color: blue; */
+    animation-name: canyonMovement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@keyframes canyonMovement {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.glasier{
+    /* background-color: red; */
+    background-image: url(/images/glasier.jpg);
+    background-size: 100% 100%;
+
+}
+
+.glasier h2{
+    /* background-color: blue; */
+    animation-name: glasierMovement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+
+@keyframes glasierMovement {
+    from{
+        transform: scale(0,0);
+    }to{
+        transform: scale(200%,200%);
+    }
+}
